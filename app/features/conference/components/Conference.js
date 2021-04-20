@@ -219,7 +219,8 @@ class Conference extends Component<Props, State> {
             configOverwrite,
             onload: this._onIframeLoad,
             parentNode: this._ref.current,
-            roomName
+            roomName,
+            jwt: 'eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtNzUxZWFhOTRmYmIxNDkwY2ExYTFmMWMwZDQ0NGNlODEvZmYzYzBhLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImV4cCI6MTYxODkxOTI5OCwibmJmIjoxNjE4OTEyMDkzLCJpc3MiOiJjaGF0Iiwicm9vbSI6IioiLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtNzUxZWFhOTRmYmIxNDkwY2ExYTFmMWMwZDQ0NGNlODEiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOnRydWUsIm91dGJvdW5kLWNhbGwiOnRydWUsInRyYW5zY3JpcHRpb24iOnRydWUsInJlY29yZGluZyI6dHJ1ZX0sInVzZXIiOnsibW9kZXJhdG9yIjp0cnVlLCJuYW1lIjoiZGluZXNoLnJlZGR5IiwiaWQiOiJhdXRoMHw1ZmM1N2ViMThmMTU2ZjAwNjk5MGQwZmQiLCJhdmF0YXIiOiIiLCJlbWFpbCI6ImRpbmVzaC5yZWRkeUBjYXJlbW9uaXRvci5jb20uYXUifX19.M92w_bLAcgier6cpmZfc77eIrnvDuJhUM4neAtrvTABuE86fss0EgODC7nBRfPobnG8M-rxegRE-7dBL9Ep4DAkYm3qIirdywSwGlhGSQA8y6gGM7_YNdm2XFMPUPxpBc03J9KzxEIVjj6IRCtfUDZoPhZdoI77UO8OxS3mmegTTnij4yLjsL-LDH3M7WWbI19OrkAjmTfhFIMWrw3hj9UIWTthdrDpBS7nFuYaCrXaFB382qO03_fh1cOn05vc9QTfaY8AqnyNTeElodUTXrWTarXKpBepr2HMoFykMCRsGBtMNZpSGdfWDwiQ7aBpcCNgMlo-pzraE-4ta9HLcxw'
         };
 
         this._api = new JitsiMeetExternalAPI(host, {
