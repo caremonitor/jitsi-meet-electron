@@ -1,5 +1,5 @@
 {
-  "name": "jitsi-meet-electron",
+  "name": "caremonitor-meet-electron",
   "version": "2.8.5",
   "description": "CareMonitor Meet Desktop Application",
   "main": "./build/main.js",
@@ -17,7 +17,7 @@
     "node": ">=12.0.0"
   },
   "build": {
-    "appId": "org.jitsi.jitsi-meet",
+    "appId": "org.jitsi.caremonitor-meet",
     "productName": "CareMonitor Meet",
     "generateUpdatesFilesForAllChannels": true,
     "afterPack": "./linux-sandbox-fix.js",
@@ -28,7 +28,7 @@
       "!main.js"
     ],
     "mac": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "CareMonitor-meet.${ext}",
       "target": [
         {
           "arch": "universal",
@@ -46,8 +46,8 @@
       "entitlementsInherit": "entitlements.mac.plist",
       "asarUnpack": "**/*.node",
       "extendInfo": {
-        "NSCameraUsageDescription": "Jitsi Meet requires access to your camera in order to make video-calls.",
-        "NSMicrophoneUsageDescription": "Jitsi Meet requires access to your microphone in order to make calls (audio/video).",
+        "NSCameraUsageDescription": "CareMonitor Meet requires access to your camera in order to make video-calls.",
+        "NSMicrophoneUsageDescription": "CareMonitor Meet requires access to your microphone in order to make calls (audio/video).",
         "LSMultipleInstancesProhibited": true
       }
     },
@@ -57,10 +57,10 @@
       "hardenedRuntime": false
     },
     "linux": {
-      "artifactName": "jitsi-meet-${arch}.${ext}",
+      "artifactName": "CareMonitor-meet-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
-      "executableName": "jitsi-meet",
+      "description": "CareMonitor Meet Desktop App",
+      "executableName": "caremonitor-meet",
       "target": [
         {
           "arch": "x64",
@@ -73,7 +73,7 @@
       ]
     },
     "win": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "CareMonitor-meet.${ext}",
       "target": [
         {
           "arch": [
@@ -92,7 +92,7 @@
         "name": "jitsi-protocol",
         "role": "Viewer",
         "schemes": [
-          "jitsi-meet"
+          "caremonitor-meet"
         ]
       }
     ]
@@ -109,7 +109,7 @@
     "webrtc",
     "xmpp",
     "electron",
-    "jitsi-meet"
+    "caremonitor-meet"
   ],
   "author": "Jitsi Team <support@jitsi.org>",
   "readmeFilename": "README.md",
